@@ -1,0 +1,33 @@
+<div class="container">
+    <form #regForm="ngForm" (ngSubmit)="doRegistration(regForm.value)">
+        <h1>Sign Up</h1>
+
+        <div class="form-group">
+            <label for="" class="field">Full Name : </label>
+            <input required type="text" name="name" [(ngModel)]="data.name" class="form-control" placeholder="Full Name">
+        </div>
+
+        <div class="form-group">
+            <label for="" class="field">Phone Number : </label>
+            <input required type="number" name="number" [(ngModel)]="data.number" class="form-control" placeholder="Phone Number">
+        </div>
+
+        <div class="form-group">
+            <label for="" class="field">Email Address : </label>
+            <input required type="email" name="email" [(ngModel)]="data.email" class="form-control" placeholder="Email Address">
+        </div>
+
+        <div class="form-group">
+            <label for="" class="field">Password : </label>
+            <input required type="password" name="password" [(ngModel)]="data.password" class="form-control" placeholder="Password">
+        </div>
+
+        <button type="submit" class="btn">Sign Up</button>
+        <br><br>
+        <span>
+            Already have an Account??
+            <a routerLink="/login">Login here!!</a>
+        </span>
+    </form>
+
+ </div>

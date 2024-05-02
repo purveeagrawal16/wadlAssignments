@@ -1,0 +1,19 @@
+<div class="container">
+    <form #myLogin="ngForm" (ngSubmit)="doLogin(myLogin.value)">
+        <h1>LogIn</h1>
+
+        <div class="form-group">
+            <label for="" class="field">Email Address : </label>
+            <input required type="email" name="email" [(ngModel)]="data.email" class="form-control" placeholder="Email Address">
+        </div>
+
+        <div class="form-group">
+            <label for="" class="field">Password : </label>
+            <input required type="password" name="password" [(ngModel)]="data.password" class="form-control" placeholder="Password">
+        </div>
+
+        <button type="submit" class="btn">Log In</button>
+        <br><br>
+    </form>
+
+ </div>
